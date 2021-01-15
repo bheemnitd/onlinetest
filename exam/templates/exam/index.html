@@ -1,0 +1,171 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'script.js' %}"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">O N L I N E - T E S T</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Links -->
+            <ul class="navbar-nav navbar-nav ml-auto">
+                
+
+                <!-- Dropdown -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NAME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#myModal">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LOGOUT</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <br>
+    
+    <div class="container">
+        <h3>Multiple choice/Subject/</h3>
+        
+        <p>Read the Given question carefully and choose the correct answer.</p>
+        <hr>
+
+        <div class="d-flex bg-secondary justify-content-between">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+            <div class=""><strong class="text-right">Rmaining Time:01:32:39</strong></div>
+        </div>
+          
+        <div class="row mt-3">
+            <div class="col-sm-9">
+                <p id="multiple-choice-question"></p>
+
+                    <div class="custom-control custom-radio mt-3">
+                        <input type="radio" class="custom-control-input" id="option1" name="radio-stacked" required>
+                        <label class="custom-control-label" for="option1" id="radio1"></label>
+                    </div>
+
+                    <div class="custom-control custom-radio mt-3">
+                        <input type="radio" class="custom-control-input" id="option2" name="radio-stacked" required>
+                        <label class="custom-control-label" for="option2" id="radio2"></label>
+                    </div>
+
+                    <div class="custom-control custom-radio mt-3">
+                        <input type="radio" class="custom-control-input" id="option3" name="radio-stacked" required>
+                        <label class="custom-control-label" for="option3" id="radio3"></label>
+                    </div>
+
+                    <div class="custom-control custom-radio mt-3">
+                        <input type="radio" class="custom-control-input" id="option4" name="radio-stacked" required>
+                        <label class="custom-control-label" for="option4" id="radio4"></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-sm mt-3" id="submitm">Submit</button>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <button class="btn btn-danger btn-lr" id="prevm" name="">P R E V</button>
+                    <button class="btn btn-danger btn-lr" id="next">N E X T</button>
+                </div>
+            </div>
+            
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-secondary mt-1" id="1m">01</button>
+                <button type="button" class="btn btn-secondary mt-1" id="2m">02</button>
+                <button type="button" class="btn btn-secondary mt-1" id="3m">03</button>
+                <button type="button" class="btn btn-secondary mt-1" id="4m">04</button>
+                <button type="button" class="btn btn-secondary mt-1" id="5m">05</button>
+                <button type="button" class="btn btn-secondary mt-1" id="6m">06</button>
+                <button type="button" class="btn btn-secondary mt-1" id="7m">07</button>
+                <button type="button" class="btn btn-secondary mt-1" id="8m">08</button>
+                <button type="button" class="btn btn-secondary mt-1" id="9m">09</button>
+                <button type="button" class="btn btn-secondary mt-1" id="10m">10</button>
+                <button type="button" class="btn btn-secondary mt-1" id="11m">11</button>
+                <button type="button" class="btn btn-secondary mt-1" id="12m">12</button>
+                <button type="button" class="btn btn-secondary mt-1" id="13m">13</button>
+                <button type="button" class="btn btn-secondary mt-1" id="14m">14</button>
+                <button type="button" class="btn btn-secondary mt-1" id="15m">15</button>
+                <button type="button" class="btn btn-secondary mt-1" id="16m">16</button>
+                <button type="button" class="btn btn-secondary mt-1" id="17m">17</button>
+                <button type="button" class="btn btn-secondary mt-1" id="18m">18</button>
+                <button type="button" class="btn btn-secondary mt-1" id="19m">19</button>
+                <button type="button" class="btn btn-secondary mt-1" id="20m">20</button>
+                <button type="button" class="btn btn-secondary mt-1" id="11m">21</button>
+                <button type="button" class="btn btn-secondary mt-1" id="12m">22</button>
+                <button type="button" class="btn btn-secondary mt-1" id="13m">23</button>
+                <button type="button" class="btn btn-secondary mt-1" id="14m">24</button>
+                <button type="button" class="btn btn-secondary mt-1" id="15m">25</button>
+                <button type="button" class="btn btn-secondary mt-1" id="16m">26</button>
+                <button type="button" class="btn btn-secondary mt-1" id="17m">27</button>
+                <button type="button" class="btn btn-secondary mt-1" id="18m">28</button>
+                <button type="button" class="btn btn-secondary mt-1" id="19m">29</button>
+                <button type="button" class="btn btn-secondary mt-1" id="20m">30</button>
+            </div>
+        </div>        
+    </div>
+</body>
+<!-- Button to Open the Modal -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header d-flex justify-content-around">
+            <a class="nav-link" id="login" href="#">Login</a>
+            <a class="nav-link" id="signup" href="#">Signup</a>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="/action_page.php">
+                <div class="form-group login">
+                    <input type="name" class="form-control" placeholder="Enter name" id="name">
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter email/mobile number" id="email">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd1">
+                </div>
+
+                <div class="form-group login">
+                    <input type="password" class="form-control" placeholder="Enter confirm password" id="pwd2">
+                </div>
+                {% comment %} <div class="form-group form-check">
+                    <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                    </label>
+                </div> {% endcomment %}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</html>
